@@ -1,0 +1,22 @@
+package org.generation;
+
+public class ScannerClass {
+
+	public static void main(String[] args) {
+		/*
+         * La clase Scanner en Java se utiliza para 
+         * leer datos de entrada de diferentes fuentes, 
+         * como la consola, archivos o flujos de texto. 
+         * Es especialmente útil para interactuar con 
+         * el usuario mediante la consola.
+         * 
+         * La clase Scanner en Java es una clase útil 
+         * que se encuentra en el paquete java.util
+         * 
+         */
+		
+		
+
+	}
+
+}

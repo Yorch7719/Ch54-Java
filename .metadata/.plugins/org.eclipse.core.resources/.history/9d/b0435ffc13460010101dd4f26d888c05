@@ -1,0 +1,26 @@
+package mx.gob.loterianacional;
+
+public class Melate {
+
+	/*
+	 * Genera un número aleatorio entre 1 y 54 (inclusive).
+	 * @return número entero.
+	 */
+	
+	
+	
+	/**
+	 * Muestra en consola 7 número aleatorios del 1 al 54. 
+	 * Los números pueden ser repetidos
+	 */
+	
+	/** Muestra en consola 7 números aleatorios del 1 al 54
+	 * Los números no pueden repetirse
+	 *  Estos números deben de estar ordenados de menor a mayor.
+	 *  Para cada número agrega la fecha y la hora en el siguiente formato
+	 *  (dd-MMM-yyyy HH:mm:ss)
+	 */
+	
+	
+	
+}

@@ -1,0 +1,15 @@
+package mx.gob.loterianacional;
+
+public class MelateTest {
+
+	public static void main(String[] args) {
+		
+		Melate melate = new Melate();
+
+        melate.mostrarNumerosRepetidos();
+        System.out.println("-------------------------------");
+        melate.mostrarNumerosSinRepetirOrdenadosConFecha();
+    
+	}
+
+}

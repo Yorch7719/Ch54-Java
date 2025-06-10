@@ -1,0 +1,94 @@
+package mx.gob.loterianacional;
+
+import java.util.*;
+import java.text.SimpleDateFormat;
+
+public class Melate {
+
+	/*
+	 * Genera un número aleatorio entre 1 y 54 (inclusive).
+	 * @return número entero.
+	 */
+	
+	int numeroAleatorio (int min, int max) {
+		Random random = new Random ();
+		return random.nextInt(min, max +1);
+	}
+	
+	
+	int randomNumber(int min, int max) {
+		// Generar un número aleatorio entre 0.0 y 1.0 (sin incluir)
+		double randomValue = Math.random();
+		// Escalar el número aleatorio al rango deseado
+		double scaledRandomValue = randomValue * (max - min +1);
+		// Convertir el número escalado en un entero redondeado hacia arriba
+		int finalNumber = (int) Math.ceil(scaledRandomValue);
+		return finalNumber;
+	}
+	
+	/**
+	 * Muestra en consola 7 número aleatorios del 1 al 54. 
+	 * Los números pueden ser repetidos
+	 */
+	
+	void printListOfRandomNumbers (int number, int min, int max) {
+		int [] num =  new int [number];
+		for (int i = 0; i < number; i++) {
+			num[i] = numeroAleatorio(min, max);
+		}
+		System.out.println("Tu lista de números es :" + Arrays.toString(num));
+	}
+	
+	
+	
+	
+	
+	
+	public int generarNumeroAleatorio() {
+        return (int)(Math.random() * 54) + 1;
+    }
+	
+	/**
+	 * Muestra en consola 7 número aleatorios del 1 al 54. 
+	 * Los números pueden ser repetidos
+	 */
+	
+	public void mostrarNumerosRepetidos() {
+        System.out.println("Números (pueden repetirse):");
+        for (int i = 0; i < 7; i++) {
+            System.out.print(generarNumeroAleatorio() + " ");
+        }
+        System.out.println();
+	}// salto de línea
+        
+	
+	/** Muestra en consola 7 números aleatorios del 1 al 54
+	 * Los números no pueden repetirse
+	 *  Estos números deben de estar ordenados de menor a mayor.
+	 *  Para cada número agrega la fecha y la hora en el siguiente formato
+	 *  (dd-MMM-yyyy HH:mm:ss)
+	 */
+	
+        public void mostrarNumerosSinRepetirOrdenadosConFecha() {
+            System.out.println("Números únicos, ordenados con fecha y hora:");
+
+            Set<Integer> numeros = new HashSet<>();
+            while (numeros.size() < 7) {
+                numeros.add(generarNumeroAleatorio());
+            }
+
+            List<Integer> listaOrdenada = new ArrayList<>(numeros);
+            Collections.sort(listaOrdenada);
+
+            SimpleDateFormat formato = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
+            String fechaActual = formato.format(new Date());
+
+            for (int numero : listaOrdenada) {
+                System.out.println(numero + " - " + fechaActual);
+            }
+        }
+    
+	
+    }
+	
+

@@ -1,0 +1,34 @@
+package org.generation;
+
+public class InmutableString {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * En Java, los String son inmutables, lo que significa que una vez que se crea
+		 * un objeto String, su valor no puede ser cambiado. Cualquier operación que parezca
+		 * modificar un String en realidad crea un nuevo objeto String en memoria
+		 */
+		
+		String originalString = "El gato";
+		String modifiedString = originalString.concat(" con botas"); // El gato con botas
+		
+		originalString = "Ratones ciegos";
+		
+		originalString = "El gato";
+		
+		/*
+		 * El operador de igualdad (==) en los objetos compara la referencia .
+		 */
+		// 		0xBAC3	  == 	0xBAC3
+		if( originalString == "El gato") {
+			System.out.println("El texto es el mismo");
+		} else {
+			System.out.println("El texto es diferente");
+		}
+		
+		
+		
+		
+	}
+}

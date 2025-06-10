@@ -1,0 +1,15 @@
+package org.generation;
+
+public class UserProfileTest {
+
+	public static void main(String[] args) {
+		
+		UserProfile userProfile = new UserProfile();
+
+		boolean isValid = userProfile.isValidEmail(null);
+		System.out.println("El valor null es valido? " + isValid); // false
+		
+		
+	}
+
+}

@@ -1,0 +1,60 @@
+package mx.gob.loterianacional;
+
+import java.util.*;
+import java.text.SimpleDateFormat;
+
+public class Melate {
+
+	/*
+	 * Genera un número aleatorio entre 1 y 54 (inclusive).
+	 * @return número entero.
+	 */
+	
+	public int generarNumeroAleatorio() {
+        return (int)(Math.random() * 54) + 1;
+    }
+	
+	/**
+	 * Muestra en consola 7 número aleatorios del 1 al 54. 
+	 * Los números pueden ser repetidos
+	 */
+	
+	public void mostrarNumerosRepetidos() {
+        System.out.println("Números (pueden repetirse):");
+        for (int i = 0; i < 7; i++) {
+            System.out.print(generarNumeroAleatorio() + " ");
+        }
+        System.out.println();
+	}// salto de línea
+        
+	
+	/** Muestra en consola 7 números aleatorios del 1 al 54
+	 * Los números no pueden repetirse
+	 *  Estos números deben de estar ordenados de menor a mayor.
+	 *  Para cada número agrega la fecha y la hora en el siguiente formato
+	 *  (dd-MMM-yyyy HH:mm:ss)
+	 */
+	
+        public void mostrarNumerosSinRepetirOrdenadosConFecha() {
+            System.out.println("Números únicos, ordenados con fecha y hora:");
+
+            Set<Integer> numeros = new HashSet<>();
+            while (numeros.size() < 7) {
+                numeros.add(generarNumeroAleatorio());
+            }
+
+            List<Integer> listaOrdenada = new ArrayList<>(numeros);
+            Collections.sort(listaOrdenada);
+
+            SimpleDateFormat formato = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
+            String fechaActual = formato.format(new Date());
+
+            for (int numero : listaOrdenada) {
+                System.out.println(numero + " - " + fechaActual);
+            }
+        }
+    
+	
+    }
+	
+
