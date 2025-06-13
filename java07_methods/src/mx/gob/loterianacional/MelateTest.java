@@ -1,5 +1,6 @@
 package mx.gob.loterianacional;
 
+<<<<<<< HEAD
 import java.util.List;
 
 public class MelateTest {
@@ -25,4 +26,19 @@ public class MelateTest {
         // melate.mostrarNumerosRepetidos();
         // melate.mostrarNumerosSinRepetirOrdenadosConFecha();
     }
+=======
+public class MelateTest {
+
+	public static void main(String[] args) {
+		Melate melate = new Melate();
+		
+		melate.printRandomNumbersList(7, 1, 54);		
+		melate.printRandomNumbersList("7", "1", "54");
+		melate.printRandomNumbersList();
+		
+		
+
+	}
+
+>>>>>>> upstream/main
 }

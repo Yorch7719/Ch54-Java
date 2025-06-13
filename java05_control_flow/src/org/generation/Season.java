@@ -19,8 +19,11 @@ public class Season {
 		 * 
 		 * Resolver la estación del año usando if-else-if y switch
 		 */
+<<<<<<< HEAD
 		
 		
+=======
+>>>>>>> upstream/main
 
 	}
 
