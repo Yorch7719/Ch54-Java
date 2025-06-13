@@ -11,7 +11,7 @@ public class AtmTest {
 		/*
 		 *  Crear un cajero, asignarlo a la variable caje02
 		 *  establecer los atributos como:
-		 *  serialNumber: 2
+		 *  serialNumber: 2   
 		 *  balance: 400_000
 		 *  address: "Av. Concha n.124."
 		 */
