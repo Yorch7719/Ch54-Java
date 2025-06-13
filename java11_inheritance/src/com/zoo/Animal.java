@@ -1,6 +1,6 @@
 package com.zoo;
 
-<<<<<<< HEAD
+
 abstract public class Animal {
 
 	/**
@@ -51,7 +51,8 @@ abstract public class Animal {
  *  Las clases abstractas se recomienda utilizar para
  *  clases que estén estrechamente relacionadas ( is-A )
  */
-abstract public class Animal {
+    
+    abstract public class Animal {
 	
 	private String commonName;
 	private String scientificName;
@@ -73,11 +74,9 @@ abstract public class Animal {
 	 *  de hacer tu clase abstracta.
 	 */
 	abstract public String noise();
-<<<<<<< HEAD
 	abstract public String nerviousSystem();
-=======
 	abstract public String nervousSystem();
->>>>>>> upstream/main
+
 
 	public final String getCommonName() {
 		return commonName;
@@ -115,7 +114,7 @@ abstract public class Animal {
 		builder.append("]");
 		return builder.toString();
 	}
-<<<<<<< HEAD
+
 
 	
 	
@@ -124,8 +123,8 @@ abstract public class Animal {
 	
 	
 	
-=======
+
 	
 
->>>>>>> upstream/main
+
 }

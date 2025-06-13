@@ -1,7 +1,7 @@
 package com.zoo;
 
 abstract public class Feline extends Animal {
-<<<<<<< HEAD
+
 
 	public Feline( double age ) {
 		super("Feline", "Felidae", age);
@@ -30,7 +30,7 @@ abstract public class Feline extends Animal {
 	
 	
 	
-=======
+
 	
 	public Feline( double age) {
 		super("Feline", "Felidae", age);		
@@ -56,5 +56,5 @@ abstract public class Feline extends Animal {
 	}
 	
 
->>>>>>> upstream/main
+
 }

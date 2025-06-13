@@ -1,12 +1,12 @@
 package com.zoo;
 
-<<<<<<< HEAD
+
 public class Cat extends Feline {
-=======
+
 import com.roles.Pet;
 
 public class Cat extends Feline implements Pet {
->>>>>>> upstream/main
+
 	private String name;
 	private boolean isDomestic;
 	
@@ -17,11 +17,11 @@ public class Cat extends Feline implements Pet {
 		super.setCommonName("Cat");
 		super.setScientificName("Catus");
 	}
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> upstream/main
+	
+
+
+
 	@Override
 	public String noise() {
 		return "Rauuuullll";
@@ -46,11 +46,11 @@ public class Cat extends Feline implements Pet {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-<<<<<<< HEAD
+
 		builder.append(super.toString() );
-=======
+
 		builder.append(super.toString());
->>>>>>> upstream/main
+
 		builder.append("Cat [name=");
 		builder.append(name);
 		builder.append(", isDomestic=");
@@ -58,13 +58,13 @@ public class Cat extends Feline implements Pet {
 		builder.append("]");
 		return builder.toString();
 	}
-<<<<<<< HEAD
+
 	
 	
 	
 	
 	
-=======
+
 
 	@Override
 	public String trick() {
@@ -72,5 +72,5 @@ public class Cat extends Feline implements Pet {
 	}
 
 		
->>>>>>> upstream/main
+
 }
