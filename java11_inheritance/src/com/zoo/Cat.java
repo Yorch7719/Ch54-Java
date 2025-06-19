@@ -1,5 +1,6 @@
 package com.zoo;
 
+<<<<<<< HEAD
 
 public class Cat extends Feline {
 
@@ -7,6 +8,12 @@ import com.roles.Pet;
 
 public class Cat extends Feline implements Pet {
 
+=======
+import com.roles.EsquemaDeVacunacion;
+import com.roles.Pet;
+
+public class Cat extends Feline implements Pet, EsquemaDeVacunacion {
+>>>>>>> upstream/main
 	private String name;
 	private boolean isDomestic;
 	
@@ -69,6 +76,11 @@ public class Cat extends Feline implements Pet {
 	@Override
 	public String trick() {
 		return "Soy un gato, no tengo trucos, soy tu amo";
+	}
+
+	@Override
+	public String aplicarVacuna(double peso) {		
+		return "Se vacuna al michi";
 	}
 
 		
